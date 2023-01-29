@@ -1,7 +1,6 @@
 from modular import Transaction
-                
-kepin = Transaction()
 
+user = input("Masukan nama anda: ")
+user = Transaction()
 
-
-kepin.total_price()
+user.menu()
