@@ -35,6 +35,7 @@ class Transaction():
         yakin = input("Apakah anda yakin ingin menghapus semua item?(y/n): ")
         if yakin == "y":
             self.keranjang.clear()
+            self.total_bayar = 0
             print("Semua item berhasil direset")
         if yakin != "y":
             pass
@@ -46,9 +47,9 @@ class Transaction():
         
     def total_price(self):
         discount = 0
-        if self.total_bayar > 200000 and self.total_bayar < 300000:
+        if self.total_bayar > 200_000 and self.total_bayar <= 300_000:
             discount = self.total_bayar * 0.05
-        elif self.total_bayar > 300000 and self.total_bayar < 500000:
+        elif self.total_bayar > 300_000 and self.total_bayar < 500000:
             discount = self.total_bayar * 0.08
         elif self.total_bayar > 500000:
             discount = self.total_bayar * 0.10

@@ -1,12 +1,14 @@
 from modular import Transaction
 
 print("Selamat datang di Cashier Pacmann".center(40,'='))
-user = input("Masukan nama Anda: ")
+user = input("Silakan masukan nama Anda: ")
 user = Transaction()
 
 while True:
     print('-'*40)
     print(" Super Cashier ".center(40,'='))
+    print('-'*40)
+    print(f' Menu '. center(40,'='))
     print('-'*40)
     print("1. Add Item")
     print("2. Update Item Name")
